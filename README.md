@@ -19,6 +19,7 @@
 </p>
 
 <p align="center">
+  <a href="https://eips.ethereum.org/EIPS/eip-8004"><img src="https://img.shields.io/badge/EIP--8004-Decentralized_AI_Agents-FF6B6B?style=flat&logo=ethereum&logoColor=white" alt="EIP-8004"></a>
   <img src="https://img.shields.io/badge/Solidity-0.8.20-363636?logo=solidity" alt="Solidity">
   <img src="https://img.shields.io/badge/TypeScript-5.0-3178C6?logo=typescript&logoColor=white" alt="TypeScript">
   <img src="https://img.shields.io/badge/OpenZeppelin-5.0-4E5EE4?logo=openzeppelin&logoColor=white" alt="OpenZeppelin">
@@ -447,6 +448,7 @@ REPORT_GAS=true npx hardhat test
 
 | Category | Technologies |
 |----------|--------------|
+| **Core Standard** | **EIP-8004** (Decentralized AI Agents) |
 | **Smart Contracts** | Solidity 0.8.20, OpenZeppelin 5.0, Hardhat |
 | **Frontend** | Vite, TypeScript, Tailwind CSS, Ethers.js 6 |
 | **Backend** | Node.js 18, Express, TypeScript |
