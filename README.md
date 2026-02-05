@@ -190,7 +190,7 @@ All contracts are verified on **Ethereum Mainnet**:
 
 | Contract | Address | Description |
 |----------|---------|-------------|
-| **ClankerFactory** | [`0x6dd65e52eafd79a989fd0000d2ed85c0a7fde52d`](https://basescan.org/address/0x6dd65e52eafd79a989fd0000d2ed85c0a7fde52d) | AI token deployment |
+| **ClankerFactory** | `TBD` | AI token deployment (pending deployment) |
 
 ---
 
@@ -285,7 +285,7 @@ AI-powered autonomous LP token locking system with dynamic risk management.
 
 AI-powered token deployment system on Base network with automatic liquidity provisioning.
 
-**Factory Contract:** [`0x6dd65e52eafd79a989fd0000d2ed85c0a7fde52d`](https://basescan.org/address/0x6dd65e52eafd79a989fd0000d2ed85c0a7fde52d)
+**Factory Contract:** `TBD` (pending deployment)
 
 ```
 Social Signal → AI Intent Parser → Token Deploy → Auto LP Creation

@@ -17,7 +17,7 @@
 
 Clanker AI Agent is an autonomous token deployment system that monitors social signals and deploys ERC-20 tokens with automatic liquidity provisioning on Base network.
 
-**Factory Contract:** `0x6dd65e52eafd79a989fd0000d2ed85c0a7fde52d`
+**Factory Contract:** `TBD` (pending deployment)
 
 ---
 
@@ -74,7 +74,7 @@ Clanker AI Agent is an autonomous token deployment system that monitors social s
 │  │                         ▼                                                 │   │
 │  │  ┌───────────────────────────────────────────────────────────────────┐   │   │
 │  │  │                      Base Network                                  │   │   │
-│  │  │  ClankerFactory: 0x6dd65e52eafd79a989fd0000d2ed85c0a7fde52d      │   │   │
+│  │  │  ClankerFactory: TBD (pending deployment)                        │   │   │
 │  │  └───────────────────────────────────────────────────────────────────┘   │   │
 │  └──────────────────────────────────────────────────────────────────────────┘   │
 │                                                                                  │
@@ -132,7 +132,7 @@ Edit `.env`:
 RPC_URL=https://mainnet.base.org
 
 # Contracts
-FACTORY_ADDRESS=0x6dd65e52eafd79a989fd0000d2ed85c0a7fde52d
+FACTORY_ADDRESS=<YOUR_FACTORY_CONTRACT_ADDRESS>
 
 # AI
 OPENAI_API_KEY=sk-...
@@ -158,7 +158,7 @@ npm start
 
 ### ClankerFactory
 
-**Address:** `0x6dd65e52eafd79a989fd0000d2ed85c0a7fde52d`
+**Address:** `TBD` (pending deployment)
 
 **Key Functions:**
 
@@ -294,7 +294,7 @@ The Clanker AI Agent was tested on Base network using the following wallet:
 
   Agent Wallet:     0x6dd65e52eafd79a989fd0000d2ed85c0a7fde52d
   Network:          Base Mainnet (Chain ID: 8453)
-  Factory Contract: 0x6dd65e52eafd79a989fd0000d2ed85c0a7fde52d
+  Factory Contract: TBD (pending deployment)
 
   ┌───────────────────────────────────────────────────────────────────────────┐
   │  DEPLOYMENT METRICS                                                       │

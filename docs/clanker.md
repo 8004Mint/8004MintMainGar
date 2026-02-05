@@ -4,7 +4,7 @@
 
 Clanker AI Agent is an autonomous token deployment system that monitors social platforms for token creation requests, uses AI to parse user intents, and automatically deploys ERC-20 tokens with liquidity on Base network.
 
-**Factory Contract:** [`0x6dd65e52eafd79a989fd0000d2ed85c0a7fde52d`](https://basescan.org/address/0x6dd65e52eafd79a989fd0000d2ed85c0a7fde52d)
+**Factory Contract:** `TBD` (pending deployment)
 
 ---
 
@@ -200,7 +200,7 @@ RPC_URL=https://mainnet.base.org
 CHAIN_ID=8453
 
 # Contract Addresses
-FACTORY_ADDRESS=0x6dd65e52eafd79a989fd0000d2ed85c0a7fde52d
+FACTORY_ADDRESS=<YOUR_FACTORY_CONTRACT_ADDRESS>
 WETH_ADDRESS=0x4200000000000000000000000000000000000006
 UNISWAP_FACTORY=0x33128a8fC17869897dcE68Ed026d694621f6FDfD
 POSITION_MANAGER=0x03a520b32C04BF3bEEf7BEb72E919cf822Ed34f1
@@ -357,7 +357,7 @@ The Clanker AI Agent was tested using the following wallet on Base network:
 
   Agent Wallet:    0x6dd65e52eafd79a989fd0000d2ed85c0a7fde52d
   Network:         Base Mainnet (Chain ID: 8453)
-  Factory:         0x6dd65e52eafd79a989fd0000d2ed85c0a7fde52d
+  Factory:         TBD (pending deployment)
 
   ┌─────────────────────────────────────────────────────────────────────┐
   │  DEPLOYMENT STATISTICS                                              │
