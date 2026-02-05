@@ -1,0 +1,180 @@
+# ============================================
+# 8004 Mint - Git Ignore Configuration
+# ============================================
+
+# ============================================
+# Dependencies
+# ============================================
+node_modules/
+*/node_modules/
+.pnp
+.pnp.js
+
+# ============================================
+# Environment Variables
+# ============================================
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env*.local
+*.env
+
+# ============================================
+# Build Outputs
+# ============================================
+dist/
+build/
+out/
+.next/
+.nuxt/
+.output/
+
+# Hardhat / Solidity
+artifacts/
+cache/
+typechain/
+typechain-types/
+coverage/
+coverage.json
+
+# ============================================
+# IDE & Editor
+# ============================================
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.project
+.settings/
+*.sublime-project
+*.sublime-workspace
+
+# ============================================
+# OS Generated
+# ============================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ============================================
+# Logs
+# ============================================
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
+
+# ============================================
+# Testing
+# ============================================
+coverage/
+*.lcov
+.nyc_output/
+test-results/
+playwright-report/
+playwright/.cache/
+
+# ============================================
+# Secrets & Private Keys
+# ============================================
+*.pem
+*.key
+*.p12
+*.pfx
+credentials.json
+secrets.json
+privatekeys/
+.secret
+.mnemonic
+
+# ============================================
+# Data Files (User Generated)
+# ============================================
+trading-bot/data/users.json
+data/
+*.sqlite
+*.db
+
+# ============================================
+# Temporary Files
+# ============================================
+tmp/
+temp/
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# ============================================
+# Package Manager Locks (Optional)
+# ============================================
+# Uncomment if you don't want to track locks
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# ============================================
+# Deployment
+# ============================================
+.serverless/
+.vercel/
+.netlify/
+.amplify/
+
+# ============================================
+# Debug
+# ============================================
+.debug/
+debug/
+*.trace
+
+# ============================================
+# Misc
+# ============================================
+*.pid
+*.seed
+*.pid.lock
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+*.tsbuildinfo
+.npm/
+
+# ============================================
+# Audit Packages (Generated)
+# ============================================
+audit-package/
+*-audit-package.zip
+
+# ============================================
+# Project Specific
+# ============================================
+# Frontend build artifacts
+frontend-dist.zip
+
+# Trading bot archives
+trading-bot.tar.gz
+
+# Promo files
+promo-comments.txt
+
+# LP Locker data
+lp-locker/data/
+
+# MCP distribution
+mcp/dist/
+
+# Verify artifacts
+verify-input.json

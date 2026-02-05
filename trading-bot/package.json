@@ -1,0 +1,34 @@
+{
+  "name": "story-ai-trading-bot",
+  "version": "1.0.0",
+  "description": "AI-powered trading bot for STORY token",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "keywords": [
+    "ai",
+    "trading",
+    "telegram",
+    "moltbot"
+  ],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@types/node": "^25.2.0",
+    "axios": "^1.13.4",
+    "dotenv": "^17.2.3",
+    "ethers": "^6.16.0",
+    "node-cron": "^4.2.1",
+    "openai": "^6.17.0",
+    "telegraf": "^4.16.3",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "devDependencies": {
+    "@types/node-cron": "^3.0.11"
+  }
+}
