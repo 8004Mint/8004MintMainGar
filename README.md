@@ -195,6 +195,17 @@ All contracts are verified on **Ethereum Mainnet**:
 
 ---
 
+## Registered Agents (EIP-8004)
+
+All agents are registered on the official **EIP-8004 Identity Registry** and viewable on [8004scan](https://www.8004scan.io):
+
+| Agent | ID | 8004scan | Description |
+|-------|-----|----------|-------------|
+| **Story Scoring Agent** | #14645 | [View](https://www.8004scan.io/agents/ethereum/14645) | AI essay evaluation & token minting authorization |
+| **Remittance Agent** | #22721 | [View](https://www.8004scan.io/agents/ethereum/22721) | Token exchange verification & REMIT minting |
+
+---
+
 ## Core Modules
 
 ### 1. AI-Gated Token Minting
