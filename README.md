@@ -50,6 +50,7 @@
 | **Dynamic Staking** | Multi-tier staking with up to 8x multipliers and VIP bonuses | Solidity, Time-locks |
 | **MoltBot Trading** | Autonomous AI trading agent via Telegram | Telegraf, KyberSwap |
 | **Neural LP Locker** | AI-driven dynamic liquidity locking with risk management | Policy Networks, DexScreener |
+| **DualNFT** | Image-Token Duality NFT - each NFT bound to 100 tokens | ERC-721, Deflationary |
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────────┐
@@ -106,6 +107,7 @@
 │   ├── StoryStakingV2.sol       # Advanced staking with dynamic multipliers
 │   ├── LPLocker.sol             # Neural LP locking with AI actions
 │   ├── ClankerFactory.sol       # AI token deployment factory
+│   ├── DualNFT.sol              # Image-Token Duality NFT
 │   ├── Remittance.sol           # P2P OTC trading protocol
 │   └── RemitToken.sol           # Utility token
 │
@@ -151,7 +153,8 @@
 │   ├── api.md                   # API reference
 │   ├── contracts.md             # Smart contract docs
 │   ├── moltbot.md               # Trading bot guide
-│   └── clanker.md               # Clanker agent guide
+│   ├── clanker.md               # Clanker agent guide
+│   └── dualnft.md               # DualNFT documentation
 │
 ├── scripts/                      # Deployment & utility scripts
 │   ├── deploy.ts
@@ -329,6 +332,30 @@ Twitter          Extraction        ERC-20 Token      Pool
 | SampleCoin | SMPL | ✅ Deployed | 0.1 ETH |
 
 📖 **[Full Documentation](clanker-agent/README.md)**
+
+### 6. DualNFT - Image-Token Duality
+
+NFT collection where each NFT is permanently bound to 100 NFT tokens - creating true "dual nature" assets.
+
+```
+User pays 10 STORY ──► Contract ──► 2 STORY burned 🔥
+                              ├──► 8 STORY returned
+                              └──► 1 NFT minted (= 100 NFT tokens)
+```
+
+**Key Features:**
+- **Dual Nature** - Each NFT = Image + 100 bound tokens (non-separable)
+- **Deflationary** - 2 STORY burned per mint
+- **User-Friendly** - 80% payment returned (effective cost: 2 STORY)
+
+**Supply:**
+| Metric | Value |
+|--------|-------|
+| Max NFTs | 10,000 |
+| Total Tokens | 1,000,000 |
+| Tokens/NFT | 100 (fixed) |
+
+📖 **[Full Documentation](docs/dualnft.md)**
 
 ---
 
