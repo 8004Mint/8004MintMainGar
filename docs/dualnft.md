@@ -4,7 +4,7 @@
 
 DualNFT is a unique NFT collection where each NFT is permanently bound to 100 NFT tokens. This creates a "dual nature" - you're buying both an image and tokens that cannot be separated.
 
-**Contract:** `TBD` (pending deployment)
+**Contract:** [`0xC5C9D64BC9A52538298ac86566117aDD23FdBCcf`](https://etherscan.io/address/0xC5C9D64BC9A52538298ac86566117aDD23FdBCcf)
 
 ---
 

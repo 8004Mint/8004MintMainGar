@@ -196,6 +196,12 @@ All contracts are verified on **Ethereum Mainnet**:
 |----------|---------|-------------|
 | **ClankerFactory** | `TBD` | AI token deployment (pending deployment) |
 
+**Ethereum Mainnet (DualNFT):**
+
+| Contract | Address | Description |
+|----------|---------|-------------|
+| **DualNFT** | [`0xC5C9D64BC9A52538298ac86566117aDD23FdBCcf`](https://etherscan.io/address/0xC5C9D64BC9A52538298ac86566117aDD23FdBCcf) | Image-Token Duality NFT |
+
 ---
 
 ## Registered Agents (EIP-8004)
