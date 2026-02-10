@@ -1,0 +1,44 @@
+{
+  "name": "DualNFT #2703",
+  "description": "Image-Token Duality NFT - Each NFT bound to 100 NFT tokens",
+  "image": "ipfs://bafybeif3jf7c5i722tgxvuknbeqce65zmb5p7izku3zdjajoilbpvkbha4/2703.svg",
+  "external_url": "https://8004mint.com/dualnft/2703",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Coral"
+    },
+    {
+      "trait_type": "Pattern",
+      "value": "Stripes"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Star"
+    },
+    {
+      "trait_type": "Body Color",
+      "value": "Amethyst"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Alien"
+    },
+    {
+      "trait_type": "Eye Color",
+      "value": "White"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Antenna"
+    },
+    {
+      "trait_type": "Accent",
+      "value": "Mustard"
+    },
+    {
+      "trait_type": "Bound Tokens",
+      "value": "100"
+    }
+  ]
+}

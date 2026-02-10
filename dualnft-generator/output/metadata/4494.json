@@ -1,0 +1,44 @@
+{
+  "name": "DualNFT #4494",
+  "description": "Image-Token Duality NFT - Each NFT bound to 100 NFT tokens",
+  "image": "ipfs://bafybeif3jf7c5i722tgxvuknbeqce65zmb5p7izku3zdjajoilbpvkbha4/4494.svg",
+  "external_url": "https://8004mint.com/dualnft/4494",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "River Blue"
+    },
+    {
+      "trait_type": "Pattern",
+      "value": "Solid"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Diamond"
+    },
+    {
+      "trait_type": "Body Color",
+      "value": "Storm"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Robot"
+    },
+    {
+      "trait_type": "Eye Color",
+      "value": "Cyan"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Hat"
+    },
+    {
+      "trait_type": "Accent",
+      "value": "Lavender"
+    },
+    {
+      "trait_type": "Bound Tokens",
+      "value": "100"
+    }
+  ]
+}

@@ -8,7 +8,12 @@
     "generate:sample": "node generate.js --sample 10",
     "generate:all": "node generate.js --count 10000"
   },
-  "dependencies": {},
   "author": "8004 Mint Team",
-  "license": "MIT"
+  "license": "MIT",
+  "keywords": [],
+  "type": "commonjs",
+  "dependencies": {
+    "axios": "^1.13.5",
+    "form-data": "^4.0.5"
+  }
 }

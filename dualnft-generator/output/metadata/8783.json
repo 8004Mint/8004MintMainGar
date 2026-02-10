@@ -1,0 +1,44 @@
+{
+  "name": "DualNFT #8783",
+  "description": "Image-Token Duality NFT - Each NFT bound to 100 NFT tokens",
+  "image": "ipfs://bafybeif3jf7c5i722tgxvuknbeqce65zmb5p7izku3zdjajoilbpvkbha4/8783.svg",
+  "external_url": "https://8004mint.com/dualnft/8783",
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Midnight"
+    },
+    {
+      "trait_type": "Pattern",
+      "value": "Checker"
+    },
+    {
+      "trait_type": "Body",
+      "value": "Square"
+    },
+    {
+      "trait_type": "Body Color",
+      "value": "Snow"
+    },
+    {
+      "trait_type": "Eyes",
+      "value": "Wide"
+    },
+    {
+      "trait_type": "Eye Color",
+      "value": "Cyan"
+    },
+    {
+      "trait_type": "Accessory",
+      "value": "Horns"
+    },
+    {
+      "trait_type": "Accent",
+      "value": "Light Blue"
+    },
+    {
+      "trait_type": "Bound Tokens",
+      "value": "100"
+    }
+  ]
+}

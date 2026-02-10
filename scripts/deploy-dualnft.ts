@@ -14,7 +14,7 @@ async function main() {
 
   // Configuration
   const STORY_TOKEN = process.env.STORY_TOKEN_ADDRESS || "0xdC94E8Ab22d66bcC9b0BDB5E48711Fb12CBea74e";
-  const BASE_URI = process.env.DUALNFT_BASE_URI || "https://api.8004mint.com/dualnft/metadata/";
+  const BASE_URI = process.env.DUALNFT_BASE_URI || "ipfs://bafybeicfhlcssgs5amjomfqsa4hatcn64z44uzspz73ncjd555t2za57qq/";
 
   console.log("\n--- Configuration ---");
   console.log("STORY Token:", STORY_TOKEN);
