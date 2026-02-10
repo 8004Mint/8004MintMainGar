@@ -1,0 +1,14 @@
+{
+  "name": "dualnft-generator",
+  "version": "1.0.0",
+  "description": "Pixel art NFT generator for DualNFT collection",
+  "main": "generate.js",
+  "scripts": {
+    "generate": "node generate.js",
+    "generate:sample": "node generate.js --sample 10",
+    "generate:all": "node generate.js --count 10000"
+  },
+  "dependencies": {},
+  "author": "8004 Mint Team",
+  "license": "MIT"
+}
