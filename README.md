@@ -50,7 +50,7 @@
 | **Dynamic Staking** | Multi-tier staking with up to 8x multipliers and VIP bonuses | Solidity, Time-locks |
 | **MoltBot Trading** | Autonomous AI trading agent via Telegram | Telegraf, KyberSwap |
 | **Neural LP Locker** | AI-driven dynamic liquidity locking with risk management | Policy Networks, DexScreener |
-| **DualNFT** | Image-Token Duality NFT - each NFT bound to 100 tokens | ERC-721, Deflationary |
+| **DualNFT** | ERC-404 NFT - each NFT bound to 1 DUAL token | ERC-404, Deflationary |
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────────┐
@@ -80,8 +80,8 @@
 │  ┌────────────────────────────────────┼────────────────────────────────────────┐│
 │  │                       SMART CONTRACT LAYER                                  ││
 │  │   ┌──────────────┐  ┌──────────────┐  ┌──────────────┐  ┌──────────────┐  ││
-│  │   │EssayGatedToken│  │StoryStakingV2│  │  Remittance  │  │  LP Locker   │  ││
-│  │   │  (ERC-20)    │  │  (Staking)   │  │   (P2P OTC)  │  │  (EIP-8004)  │  ││
+│  │   │EssayGatedToken│  │StoryStakingV2│  │   DualNFT    │  │  LP Locker   │  ││
+│  │   │  (ERC-20)    │  │  (Staking)   │  │  (ERC-404)   │  │  (EIP-8004)  │  ││
 │  │   └──────────────┘  └──────────────┘  └──────────────┘  └──────────────┘  ││
 │  └────────────────────────────────────────────────────────────────────────────┘│
 │                                       │                                          │
@@ -107,9 +107,8 @@
 │   ├── StoryStakingV2.sol       # Advanced staking with dynamic multipliers
 │   ├── LPLocker.sol             # Neural LP locking with AI actions
 │   ├── ClankerFactory.sol       # AI token deployment factory
-│   ├── DualNFT.sol              # Image-Token Duality NFT
-│   ├── Remittance.sol           # P2P OTC trading protocol
-│   └── RemitToken.sol           # Utility token
+│   ├── DualNFT404Official.sol   # ERC-404 NFT (Image-Token Duality)
+│   └── ERC404Base.sol           # ERC-404 base contract
 │
 ├── frontend/                     # Web Application (Vite + TypeScript)
 │   ├── src/
@@ -187,20 +186,13 @@ All contracts are verified on **Ethereum Mainnet**:
 |----------|---------|-------------|
 | **STORY Token** | [`0xdC94E8Ab22d66bcC9b0BDB5E48711Fb12CBea74e`](https://etherscan.io/address/0xdC94E8Ab22d66bcC9b0BDB5E48711Fb12CBea74e) | AI-gated ERC-20 |
 | **StoryStakingV2** | [`0xDF7C270C5f7Db77Abb334CEEb13D8491D9A00190`](https://etherscan.io/address/0xDF7C270C5f7Db77Abb334CEEb13D8491D9A00190) | Dynamic staking |
-| **Remittance** | [`0xA0988eb9EE9310e841316dA7188e22C6Ae5eE9e2`](https://etherscan.io/address/0xA0988eb9EE9310e841316dA7188e22C6Ae5eE9e2) | P2P OTC |
-| **RemitToken** | [`0xdf055fdCd8abdb4917f9A18B5dd91fE560300504`](https://etherscan.io/address/0xdf055fdCd8abdb4917f9A18B5dd91fE560300504) | Utility token |
+| **DualNFT (ERC-404)** | [`0xE38123495D4C8a18675bC0C4f9E4a9F932AC64D8`](https://etherscan.io/address/0xE38123495D4C8a18675bC0C4f9E4a9F932AC64D8) | Image-Token Duality |
 
 **Base Network:**
 
 | Contract | Address | Description |
 |----------|---------|-------------|
 | **ClankerFactory** | `TBD` | AI token deployment (pending deployment) |
-
-**Ethereum Mainnet (DualNFT):**
-
-| Contract | Address | Description |
-|----------|---------|-------------|
-| **DualNFT** | [`0xC5C9D64BC9A52538298ac86566117aDD23FdBCcf`](https://etherscan.io/address/0xC5C9D64BC9A52538298ac86566117aDD23FdBCcf) | Image-Token Duality NFT |
 
 ---
 
@@ -211,7 +203,6 @@ All agents are registered on the official **EIP-8004 Identity Registry** and vie
 | Agent | ID | 8004scan | Description |
 |-------|-----|----------|-------------|
 | **Story Scoring Agent** | #14645 | [View](https://www.8004scan.io/agents/ethereum/14645) | AI essay evaluation & token minting authorization |
-| **Remittance Agent** | #22721 | [View](https://www.8004scan.io/agents/ethereum/22721) | Token exchange verification & REMIT minting |
 
 ---
 
@@ -339,18 +330,20 @@ Twitter          Extraction        ERC-20 Token      Pool
 
 📖 **[Full Documentation](clanker-agent/README.md)**
 
-### 6. DualNFT - Image-Token Duality
+### 6. DualNFT - ERC-404 Image-Token Duality
 
-NFT collection where each NFT is permanently bound to 100 NFT tokens - creating true "dual nature" assets.
+ERC-404 NFT collection where each NFT is atomically bound to 1 DUAL token - creating true "dual nature" assets that can be traded on both NFT marketplaces and DEXs.
 
 ```
 User pays 10 STORY ──► Contract ──► 2 STORY burned 🔥
                               ├──► 8 STORY returned
-                              └──► 1 NFT minted (= 100 NFT tokens)
+                              └──► 1 NFT minted (= 1 DUAL token)
 ```
 
 **Key Features:**
-- **Dual Nature** - Each NFT = Image + 100 bound tokens (non-separable)
+- **ERC-404 Standard** - Hybrid ERC-20 + ERC-721 in one contract
+- **Atomic Binding** - Transfer NFT = Transfer token (inseparable)
+- **DEX Tradeable** - Trade DUAL tokens on Uniswap, tokens auto-convert to NFTs
 - **Deflationary** - 2 STORY burned per mint
 - **User-Friendly** - 80% payment returned (effective cost: 2 STORY)
 
@@ -358,8 +351,12 @@ User pays 10 STORY ──► Contract ──► 2 STORY burned 🔥
 | Metric | Value |
 |--------|-------|
 | Max NFTs | 10,000 |
-| Total Tokens | 1,000,000 |
-| Tokens/NFT | 100 (fixed) |
+| Total DUAL | 10,000 |
+| DUAL/NFT | 1 (atomic) |
+
+**Links:**
+- 🌐 **[Mint Page](https://8004mint.com/dualnft)**
+- 🖼️ **[OpenSea Collection](https://opensea.io/collection/0xe38123495d4c8a18675bc0c4f9e4a9f932ac64d8)**
 
 📖 **[Full Documentation](docs/dualnft.md)**
 
